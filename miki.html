@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="sr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miki Cerovica - Kralj Homoljskog Kukuruza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .bg-corn-yellow {
+            background-color: #facc15;
+        }
+        .bg-corn-dark {
+            background-color: #854d0e;
+        }
+    </style>
+</head>
+<body class="bg-amber-50 text-gray-800">
+
+    <!-- Navigacija -->
+    <nav class="bg-amber-500 text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-black tracking-wider flex items-center gap-2">
+                <i class="fa-solid font-bold text-yellow-200 fa-wheat-awn"></i> MIKI CEROVICA
+            </a>
+            <div class="hidden md:flex gap-6 font-semibold">
+                <a href="#about" class="hover:text-yellow-200 transition">O Mikiju</a>
+                <a href="#kalkulator" class="hover:text-yellow-200 transition">Kukuruz Kalkulator</a>
+                <a href="#garancija" class="hover:text-yellow-200 transition">Miki-Garancija</a>
+                <a href="#kontakt" class="hover:text-yellow-200 transition">Lokacija & Kontakt</a>
+            </div>
+            <a href="#kontakt" class="bg-amber-800 hover:bg-amber-900 text-white font-bold py-2 px-4 rounded-full shadow transition">
+                Kupi Kukuruz
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Sekcija -->
+    <header class="relative bg-gradient-to-b from-amber-500 to-amber-600 text-white py-20 px-4 text-center overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="bg-yellow-300 text-amber-950 font-extrabold px-4 py-1 rounded-full text-sm uppercase tracking-widest inline-block mb-4 shadow">
+                Najslađi kukuruz u Homolju i šire!
+            </span>
+            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
+                Miki Cerovica – Čovek, Legenda, i "Merač" Kukuruza!
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-yellow-100 max-w-2xl mx-auto font-medium">
+                Kukuruz tako dobar da ga i sam Miki prodeguštira pre nego što vam spakuje Džak! 🌽
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#kalkulator" class="bg-yellow-400 hover:bg-yellow-300 text-amber-950 font-black py-4 px-8 rounded-2xl shadow-xl text-lg transition transform hover:-translate-y-1">
+                    Izračunaj Miki-Meru 🧮
+                </a>
+                <a href="#kontakt" class="bg-amber-900 hover:bg-amber-800 text-white font-bold py-4 px-8 rounded-2xl shadow-xl text-lg transition transform hover:-translate-y-1">
+                    Pronađi Mikija na Mapi 📍
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- O Mikiju -->
+    <section id="about" class="py-16 px-4 max-w-5xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-amber-900 mb-4">Zašto baš Miki Cerovica?</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Tradicija, kvalitet i malo "prijateljskog poreza na užinu".</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-2xl shadow-md border-2 border-amber-200 text-center">
+                <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+                    🔥
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-amber-900">100% Homoljski Sladak</h3>
+                <p class="text-gray-600">Raste na najčistijem vazduhu kod Kučeva. Svako zrno je pun pogodak za kuvanje ili pečenje.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-md border-2 border-amber-200 text-center">
+                <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+                    ⚖️
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-amber-900">Specijalna "Miki" Vaga</h3>
+                <p class="text-gray-600">Ako naručite 10kg, dobijete oko 8.5kg. Ostalo je Miki naplatio u naturi jer "mora se proveri kvalitet".</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-md border-2 border-amber-200 text-center">
+                <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+                    🛡️
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-amber-900">Zaštita od Uroka</h3>
+                <p class="text-gray-600">Miki uvek pojede prvi klip iz vašeg džaka da proveri da nije baksuzan. Radimo isključivo za vaše dobro!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kalkulator (Šaljivi) -->
+    <section id="kalkulator" class="bg-amber-100 py-16 px-4">
+        <div class="max-w-3xl mx-auto bg-white p-8 rounded-3xl shadow-xl border-4 border-amber-400">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-black text-amber-950 mb-2">🌽 Homoljski Kukuruz Kalkulator</h2>
+                <p class="text-amber-800">Izračunajte koliko zapravo kukuruza nosite kući nakon Mikijevog "testiranja"!</p>
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <label class="block font-bold text-gray-700 mb-2 text-lg">
+                        Koliko kilograma želite da kupite?
+                        <span id="kgValue" class="text-amber-600 font-extrabold text-2xl ml-2">10 kg</span>
+                    </label>
+                    <input type="range" id="kgInput" min="1" max="50" value="10" class="w-full h-3 bg-amber-200 rounded-lg appearance-none cursor-pointer accent-amber-600">
+                </div>
+
+                <div class="bg-amber-50 p-6 rounded-2xl border-2 border-dashed border-amber-300 space-y-3">
+                    <div class="flex justify-between items-center text-gray-700">
+                        <span>Naručena količina:</span>
+                        <span id="naruceno" class="font-bold">10 kg</span>
+                    </div>
+                    <div class="flex justify-between items-center text-red-600">
+                        <span>Mikijeva užina (Degustacija):</span>
+                        <span id="maznuto" class="font-bold">-1.5 kg</span>
+                    </div>
+                    <hr class="border-amber-200">
+                    <div class="flex justify-between items-center text-xl font-black text-amber-950">
+                        <span>Stvarno dobijate u džaku:</span>
+                        <span id="stvarno" class="text-green-600">8.5 kg</span>
+                    </div>
+                </div>
+
+                <p id="poruka" class="text-center text-sm font-semibold text-amber-800 italic">
+                    "Miki: Dobro je, samo sam probao tri klipa da vidim da li je sladak!"
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recenzije -->
+    <section class="py-16 px-4 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-extrabold text-center text-amber-950 mb-12">Šta kažu kupci i komšije?</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow border border-amber-200">
+                <p class="text-gray-600 italic mb-4">"Naručio sam 20 kila za slavu. Kad sam stigao kući u Kučevo, na vagi 17kg. Zovem Mikija, kaže 'Vrućina u bagažniku, kalirao na suncu!'. Kukuruz je ipak bio fantastičan!"</p>
+                <p class="font-bold text-amber-900">- Komšija Mile, Kučevo</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow border border-amber-200">
+                <p class="text-gray-600 italic mb-4">"Svratio sam prolazeći kroz Cerovicu. Miki mi spakovao džak, a dok sam platio, on iz mog džaka već peče dva komada na ćumuru. Domaćinska usluga!"</p>
+                <p class="font-bold text-amber-900">- Dejan, prolaznik za Homolje</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt i Lokacija -->
+    <section id="kontakt" class="bg-amber-900 text-white py-16 px-4">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl font-black mb-4 text-yellow-400">Gde se nalazi Miki?</h2>
+                <p class="mb-6 text-amber-100">Svratite direktno na imanje! Ako ga ne nađete pored vage, potražite ga iza skadnja – verovatno proverava kvalitet sledeće ture.</p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-location-dot text-yellow-400 text-xl w-6"></i>
+                        <span><strong>Adresa:</strong> Homoljska 42, Cerovica (kod Kučeva)</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-yellow-400 text-xl w-6"></i>
+                        <span><strong>Telefon:</strong> Pozovite i vičite "MIKI!" ispred kapije</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-clock text-yellow-400 text-xl w-6"></i>
+                        <span><strong>Radno vreme:</strong> Od zore pa dok Miki ne ogladni</span>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <a href="https://maps.google.com/?q=Miki+Cerovica+Homoljska+42+Cerovica" target="_blank" class="inline-block bg-yellow-400 hover:bg-yellow-300 text-amber-950 font-black py-3 px-6 rounded-xl shadow transition">
+                        Otvori na Google Maps 📍
+                    </a>
+                </div>
+            </div>
+
+            <!-- Kartica Lokacije -->
+            <div class="bg-amber-800 p-6 rounded-3xl border-2 border-amber-700 text-center shadow-2xl">
+                <div class="text-6xl mb-4">🚜🌽</div>
+                <h3 class="text-2xl font-bold mb-2">Domaćinstvo Miki Cerovica</h3>
+                <p class="text-amber-200 mb-4">Homoljska 42, Cerovica</p>
+                <div class="bg-amber-950 p-4 rounded-xl text-xs text-amber-300 italic">
+                    Napomena: Ako vidite da Miki nosi čačkalicu u ustima kad stignete, to znači da je tura kukuruza upravo uspešno testirana!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-950 text-amber-400 text-center py-6 text-sm border-t border-amber-800">
+        <p>&copy; 2026 Miki Cerovica - Homoljska 42, Cerovica. Sva prava zadržana. Svi kilogrami su podložni slasnoj degustaciji.</p>
+    </footer>
+
+    <!-- JS Skripta za kalkulator -->
+    <script>
+        const kgInput = document.getElementById('kgInput');
+        const kgValue = document.getElementById('kgValue');
+        const naruceno = document.getElementById('naruceno');
+        const maznuto = document.getElementById('maznuto');
+        const stvarno = document.getElementById('stvarno');
+        const poruka = document.getElementById('poruka');
+
+        const poruke = [
+            "Miki: Samo sam probao jedan zrno, majke mi!",
+            "Miki: Dobro je, morao sam da izmerim slatkoću!",
+            "Miki: Homoljsko sunce osušilo malo u transportu!",
+            "Miki: Ovo je bio ekstra sladak pa je otišlo pola kile na uviđaj!",
+            "Miki: Brate, ko još broji u gram, bitno da je domaći!"
+        ];
+
+        kgInput.addEventListener('input', (e) => {
+            const val = parseFloat(e.target.value);
+            kgValue.textContent = val + ' kg';
+            naruceno.textContent = val + ' kg';
+            
+            // Izračunaj Miki-porez na užinu (cca 10-20%)
+            let mikiDeo = (val * 0.15).toFixed(1);
+            if (val <= 3) mikiDeo = 0.5;
+            
+            const ostalo = (val - mikiDeo).toFixed(1);
+            
+            maznuto.textContent = '-' + mikiDeo + ' kg';
+            stvarno.textContent = ostalo + ' kg';
+
+            // Promeni šaljivu poruku
+            const randomPoruka = poruke[Math.floor(Math.random() * poruke.length)];
+            poruka.textContent = '"' + randomPoruka + '"';
+        });
+    </script>
+</body>
+</html>
